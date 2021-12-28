@@ -9,7 +9,6 @@ def test_prime():
 		assert solovoyStrassen(num[i], iterations) == sympy.isprime(num[i])
 
 # Alternative way of testing
-
 # iterations = 50
 # num = [14, 11, 20, 83, 103, 305, 654, 1259, 8493, 29034]
 

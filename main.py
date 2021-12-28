@@ -1,7 +1,5 @@
 import random
 import sympy
-
-def calcJacobian(a, n):
 '''
 Function to calculate Jacobian Symbol
 
@@ -10,6 +8,8 @@ Function to calculate Jacobian Symbol
 :return: Returns 0
 :rtype: int
 '''
+def calcJacobian(a, n):
+
     if a == 0:  # (0/n) = 0
         return 0
     result = 1
@@ -52,8 +52,6 @@ Function to calculate Jacobian Symbol
 
     return 0
 
-
-def modulo(base, exponent, mod):
 '''
 Function to perform binary exponentiation
 
@@ -63,6 +61,8 @@ Function to perform binary exponentiation
 :return: modulo result
 :rtype: int
 '''
+def modulo(base, exponent, mod):
+
     x = 1
     y = base
     while exponent > 0:
@@ -74,8 +74,6 @@ Function to perform binary exponentiation
 
     return x % mod
 
-
-def solovoyStrassen(p, iterations):
 '''
 Function to perform the Solovay- Strassen Primality Test
 
@@ -84,6 +82,8 @@ Function to perform the Solovay- Strassen Primality Test
 :return: True/False
 :rtype: boolean
 '''
+def solovoyStrassen(p, iterations):
+
     if p < 2:
         return False
     if p != 2 and p % 2 == 0:
